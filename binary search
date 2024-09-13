@@ -1,0 +1,22 @@
+class main{
+    public static void main(String [] args){
+        int arr[] = {1,2,3,4,5,6};
+        int end = arr.length;
+        int start =0;
+        int target = 3;
+        int last = arr.length-1;
+        while(start<=last){
+            int mid = (start+end)/2;
+            if(arr[mid]==target){
+                System.out.print(mid);
+                break;
+            }
+            else if(arr[mid]<target){
+                start = mid+1;
+            }
+            else{
+                end=mid-1;
+            }
+        }
+    }
+}

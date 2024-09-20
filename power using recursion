@@ -1,0 +1,15 @@
+class main{
+    public static int power(int n , int m){
+        if(m==1){
+            return n;
+        }
+        else {
+            return n*power(n,m-1);
+        }
+    }
+    public static void main(String[] args){
+        int n =5;
+        int m =2;
+        System.out.println(power(n,m));
+    }
+}
